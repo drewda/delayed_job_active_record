@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name              = 'delayed_job_active_record'
+  s.name              = 'drewda_delayed_job_active_record'
   s.version           = '0.3.2'
   s.authors           = ["Brian Ryckbost", "Matt Griffin", "Erik Michaels-Ober"]
   s.summary           = 'ActiveRecord backend for DelayedJob'
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.test_files        = Dir.glob('spec/**/*')
 
   s.add_runtime_dependency     'activerecord', ['>= 2.1.0', '< 4']
-  s.add_runtime_dependency     'delayed_job',  '~> 3.0'
+  s.add_runtime_dependency     'drewda_delayed_job',  '~> 3.0'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'

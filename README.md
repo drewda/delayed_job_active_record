@@ -1,5 +1,11 @@
 # DelayedJob ActiveRecord Backend [![Build Status](http://travis-ci.org/collectiveidea/delayed_job_active_record.png)](https://travis-ci.org/collectiveidea/delayed_job_active_record) [![Dependency Status](https://gemnasium.com/collectiveidea/delayed_job_active_record.png)](https://gemnasium.com/collectiveidea/delayed_job_active_record)
 
+The only difference in drewda_delayed_job_active_record is in `lib/delayed/backend/active_record.rb`: 
+
+    attr_accessible ... :unique_id, :is_locked
+
+This makes it compatible with drewda_delayed_job.
+
 ## Installation
 
 Add the gem to your Gemfile:

@@ -9,7 +9,7 @@ module Delayed
         include Delayed::Backend::Base
 
         attr_accessible :priority, :run_at, :queue, :payload_object,
-          :failed_at, :locked_at, :locked_by
+          :failed_at, :locked_at, :locked_by, :unique_id, :is_locked
 
         before_save :set_default_run_at
 
